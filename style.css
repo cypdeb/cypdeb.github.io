@@ -126,3 +126,108 @@ p {
     top: 5rem;
     right: 0;
 }
+
+#section {
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+    #linktree {
+        background: url("https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square.png");
+    }
+    
+    #sqllogo1 {
+        height: 220px;
+        width: 169px;
+    }
+    
+    #banner, #bannerContainer {
+        height: 400px;
+    }
+    
+    #python1 {
+        top: 19rem;
+    }
+    
+    #card {
+        padding: 0 20px 40px;
+        margin: 0 auto;
+        border: 1px solid var(--accentColor);
+        box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
+        background: white;
+        border-radius: 10px;
+        padding: 0 20px 50px;
+        margin: 15px auto;
+        position: relative;
+        transform: translateY(-150px);
+    }
+    
+    #cardMenu {
+        display: initial;
+        width: 75px;
+        position: absolute;
+        height: 16px;
+        margin-right: 15px;
+        right: 0;
+        border: 1px solid var(--accentColor);
+        border-top: 0;
+    }
+    
+    .rightButtons {
+        width: 24px;
+        float: left;
+        font-family: 'pretend', sans-serif;
+        height: 100%;
+        text-align: center;
+        color: #87B6D3;
+        font-size: 11px;
+        background-color: #ffffff;
+    }
+    
+    #button1 {
+        border-right: 1px solid var(--accentColor);
+        line-height: 1.2;
+    }
+
+    #button2 {
+        border-right: 1px solid var(--accentColor);
+        line-height: 1.8;
+        font-size: 9px;
+    }
+
+    #button3 {
+        line-height: 1.5;
+    }
+    
+    #cardBar {
+        background: #e9f6fd;
+        height: 25px;
+        width: -webkit-fill-available;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+    }
+    
+    #cardText {
+        display: initial;
+        left: 0;
+        position: absolute;
+        font-family: 'Consolas';
+        font-size: 0.625rem;
+        margin-left: 15px;
+        margin-top: 7px;
+        color: #87B6D3;
+        letter-spacing: 0.1rem;
+        text-transform: lowercase;
+    }
+    
+    #header {
+        margin-top: 75px;
+    }
+}
+    
+        
+    
+    
