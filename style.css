@@ -62,3 +62,67 @@ p {
     background-size: cover;
     background-position: center 25%;
 }
+
+#likes {
+    color: #FD8676;
+    will-change: contents;
+}
+
+.socialText {
+    display: inline-block;
+    padding-left: 2px;
+}
+
+#cardText {
+    display: none;
+}
+
+#header {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+#sqllogo1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/sqllogo1.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 5rem;
+    right: 0;
+}
+
+#python1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/python1.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 5rem;
+    right: 0;
+}
+
+#tableau1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/tableau1.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 5rem;
+    right: 0;
+}
+
+#excel1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/excel.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 5rem;
+    right: 0;
+}
