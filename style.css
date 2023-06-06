@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'hachimarupop';
+    src: url('assets/fonts/HachiMaruPop-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'ktegaki';
+    src: url('assets/fonts/KTEGAKI.ttf');
+  }
+
+  @font-face {
+    font-family: 'matesc';
+    src: url('assets/fonts/MateSC-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'notoserifjp';
+    font-weight: 600;
+    src: url('assets/fonts/NotoSerifJP-Regular.otf');
+  }
+
+  @font-face {
+    font-family: 'pretend';
+    font-weight: bold;
+    src: url('assets/fonts/Pretendard-Regular.otf');
+  }
