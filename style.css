@@ -24,3 +24,10 @@
     font-weight: bold;
     src: url('assets/fonts/Pretendard-Regular.otf');
   }
+
+
+
+:root {
+    --accentColor: #72564B;
+    --font: 'ktegaki', sans-serif;
+    --delay: .3s;
