@@ -31,3 +31,22 @@
     --accentColor: #72564B;
     --font: 'ktegaki', sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#card {
+    max-width: 30rem;
+    padding: 0 20px 15px;
+    margin: 0 auto;
+}
+
+#cardMenu {
+    display: none;
+}
