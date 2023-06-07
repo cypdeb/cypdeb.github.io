@@ -59,7 +59,7 @@ p {
 
 #banner {
     height: 100%;
-    background-image: url('assets/img/banner-real.png');
+    background-image: url('banner-real.png');
     background-size: cover;
     background-position: center 25%;
 }
