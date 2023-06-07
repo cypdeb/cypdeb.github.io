@@ -28,7 +28,7 @@
 
 
 :root {
-    --accentColor: #3993ed;
+    --accentColor: #41b115;
     --font: 'ktegaki', sans-serif;
     --delay: .3s;
 }
@@ -59,7 +59,7 @@ p {
 
 #banner {
     height: 100%;
-    background-image: url('banner-real.png');
+    background-image: url('assets/img/banner-real.png');
     background-size: cover;
     background-position: center 25%;
 }
@@ -102,8 +102,8 @@ p {
     height: 145px;
     width: 127px;
     background-size: cover;
-    top: 5rem;
-    right: 0;
+    top: 3rem;
+    right: 6;
 }
 
 #tableau1 {
@@ -111,20 +111,20 @@ p {
     position: absolute;
     background-image: url('assets/img/tableau1.png');
     height: 145px;
-    width: 127px;
+    width: 150px;
     background-size: cover;
-    top: 5rem;
+    top: 3rem;
     right: 0;
 }
 
 #excel1 {
     display: block;
     position: absolute;
-    background-image: url('assets/img/excel.png');
+    background-image: url('assets/img/excel1.png');
     height: 145px;
-    width: 127px;
+    width: 145px;
     background-size: cover;
-    top: 5rem;
+    top: 3rem;
     right: 0;
 }
 
@@ -143,18 +143,35 @@ p {
     }
     
     #banner, #bannerContainer {
-        height: 400px;
+        height: 381px;
+        width: 1900px;
     }
     
     #python1 {
-        top: 19rem;
+        top: 27rem;
+        right: 34rem;
+    }
+
+    #sqllogo1 {
+        top: 26rem;
+        left: 33rem;
+    }
+
+    #tableau1 {
+        top: 40rem;
+        right: 35rem;
+    }
+
+    #excel1 {
+        top: 42rem;
+        left: 34.3rem;
     }
     
     #card {
         padding: 0 20px 40px;
         margin: 0 auto;
         border: 1px solid var(--accentColor);
-        box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
+        box-shadow: 10px 10px 0 rgba(220, 220, 220, 0.5);
         background: white;
         border-radius: 10px;
         padding: 0 20px 50px;
@@ -201,7 +218,7 @@ p {
     }
     
     #cardBar {
-        background: #e9f6fd;
+        background: #e9fdf5;
         height: 25px;
         width: -webkit-fill-available;
         border-top-left-radius: 10px;
@@ -219,7 +236,7 @@ p {
         font-size: 0.625rem;
         margin-left: 15px;
         margin-top: 7px;
-        color: #87B6D3;
+        color: #38af56;
         letter-spacing: 0.1rem;
         text-transform: lowercase;
     }
@@ -230,11 +247,11 @@ p {
 }
 
 .headerName {
-    font-family: 'hachimarupop', sans-serif;
+    font-family: 'ktegaki', sans-serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 1.25;
-    color: #72564B;
+    color: #38af56;
     display: inline-block;
 }
 
@@ -247,7 +264,7 @@ p {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: #8f7156;
+    color: #38af56;
 }
 
 .headerEmail {
@@ -260,7 +277,7 @@ p {
     width: 100%;
     text-align: center;
     text-underline-offset: 5px;
-    color: #8f7156;
+    color: #38af56;
     transition: color 0.3s ease-in-out;
 }
 
@@ -367,7 +384,7 @@ p {
     font-family: var(--font);
     width: 100%;
     text-align: center;
-    color: #87B6D3;
+    color: #87d3a9;
     font-weight: bold;
 }
     
