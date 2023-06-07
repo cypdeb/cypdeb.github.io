@@ -30,6 +30,7 @@
 :root {
     --accentColor: #3993ed;
     --font: 'ktegaki', sans-serif;
+    --delay: .3s;
 }
 
 body {
