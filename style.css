@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'hachimarupop';
     src: url('assets/fonts/HachiMaruPop-Regular.ttf');
@@ -331,7 +332,7 @@ p {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 20px;
-    padding: 15px; /* 17px */
+    padding: 15px;
     text-decoration: none;
     text-transform: lowercase;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
@@ -386,5 +387,438 @@ p {
     color: #87d3a9;
     font-weight: bold;
 }
+*/
+
+@font-face {
+    font-family: 'hachimarupop';
+    src: url('assets/fonts/HachiMaruPop-Regular.ttf');
+  }
+
+@font-face {
+    font-family: 'ktegaki';
+    src: url('assets/fonts/KTEGAKI.ttf');
+  }
+
+@font-face {
+    font-family: 'matesc';
+    src: url('assets/fonts/MateSC-Regular.ttf');
+  }
+
+@font-face {
+    font-family: 'notoserifjp';
+    font-weight: 600;
+    src: url('assets/fonts/NotoSerifJP-Regular.otf');
+  }
+
+@font-face {
+    font-family: 'pretend';
+    font-weight: bold;
+    src: url('assets/fonts/Pretendard-Regular.otf');
+  }
+
+
+
+:root {
+    --accentColor: #ff3f0f96;
+    --font: 'notoserifjp', sans-serif;
+    --delay: .3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#card {
+    max-width: 30rem;
+    padding: 0 20px 15px;
+    margin: 0 auto;
+}
+
+#cardMenu {
+    display: none;
+}
+
+#bannerContainer {
+    height: 300px;
+    position: relative;
+}
+
+#banner {
+    height: 100%;
+    background-image: url('banner-real.png');
+    background-size: cover;
+    background-position: center 25%;
+}
+
+#traits {
+    color: #ff3f0f96;
+    will-change: contents;
+}
+
+.socialText {
+    display: inline-block;
+    padding-left: 2px;
+}
+
+#cardText {
+    display: none;
+}
+
+#header {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+#sqllogo1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/sqllogo1.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 5rem;
+    right: 0;
+}
+
+#python1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/python1.png');
+    height: 145px;
+    width: 127px;
+    background-size: cover;
+    top: 3rem;
+    right: 6;
+}
+
+#tableau1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/tableau1.png');
+    height: 145px;
+    width: 150px;
+    background-size: cover;
+    top: 3rem;
+    right: 0;
+}
+
+#excel1 {
+    display: block;
+    position: absolute;
+    background-image: url('assets/img/excel1.png');
+    height: 145px;
+    width: 145px;
+    background-size: cover;
+    top: 3rem;
+    right: 0;
+}
+
+#collegedegree {
+    display:block;
+    position: absolute;
+    background-image: url('assets/img/CDebargueCollegeDiploma.png');
+    height: 405px;
+    width: 558px;
+    background-size: cover;
+    top: 3rem;
+    right: 0;
+}
+
+#datacert {
+    display:block;
+    position: absolute;
+    background-image: url('assets/img/CDebGoogleDataAnalyticsCert.png');
+    height: 408px;
+    width: 523px;
+    background-size: cover;
+    top: 3rem;
+    right: 0;
+}
+
+/*#itcert {
+    display:block;
+    position: absolute;
+    background-image: url('assets/img/CDebGoogleITCert.png');
+    height: 408px;
+    width: 523px;
+    background-size: cover;
+    top: 3rem;
+    right: 0;
+}*/
+
+#section {
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+
+    
+    #sqllogo1 {
+        height: 220px;
+        width: 169px;
+    }
+    
+    #banner, #bannerContainer {
+        height: 381px;
+        width: 1900px;
+    }
+    
+    #python1 {
+        top: 27rem;
+        right: 34rem;
+    }
+
+    #sqllogo1 {
+        top: 26rem;
+        left: 33rem;
+    }
+
+    #tableau1 {
+        top: 40rem;
+        right: 35rem;
+    }
+
+    #excel1 {
+        top: 42rem;
+        left: 34.3rem;
+    }
+
+    #collegedegree {
+        top: 25rem;
+        right: 3.3rem;
+    }
+    
+    #datacert {
+        top: 25rem;
+        left: 2.3rem;
+    }
+
+    #card {
+        padding: 0 20px 40px;
+        margin: 0 auto;
+        border: 1px solid var(--accentColor);
+        box-shadow: 10px 10px 0 rgba(220, 220, 220, 0.5);
+        background: white;
+        border-radius: 10px;
+        padding: 0 20px 50px;
+        margin: 15px auto;
+        position: relative;
+        transform: translateY(-150px);
+    }
+    
+    #cardMenu {
+        display: initial;
+        width: 75px;
+        position: absolute;
+        height: 16px;
+        margin-right: 15px;
+        right: 0;
+        border: 1px solid var(--accentColor);
+        border-top: 0;
+    }
+    
+    .rightButtons {
+        width: 24px;
+        float: left;
+        font-family: 'pretend', sans-serif;
+        height: 100%;
+        text-align: center;
+        color: #dd4e2a88;
+        font-size: 11px;
+        background-color: #ffffff;
+    }
+    
+    #button1 {
+        border-right: 1px solid var(--accentColor);
+        line-height: 1.2;
+    }
+
+    #button2 {
+        border-right: 1px solid var(--accentColor);
+        line-height: 1.8;
+        font-size: 9px;
+    }
+
+    #button3 {
+        line-height: 1.5;
+    }
+    
+    #cardBar {
+        background: #ffe7e5;
+        height: 25px;
+        width: -webkit-fill-available;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+    }
+    
+    #cardText {
+        display: initial;
+        left: 0;
+        position: absolute;
+        font-family: 'Consolas';
+        font-size: 0.625rem;
+        margin-left: 15px;
+        margin-top: 7px;
+        color: #ff3f0f96;
+        letter-spacing: 0.1rem;
+        text-transform: lowercase;
+    }
+    
+    #header {
+        margin-top: 75px;
+    }
+}
+
+.headerName {
+    font-family: 'matesc', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: #ff3f0fbe;
+    display: inline-block;
+}
+
+.headerText {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    font-family: 'matesc', sans-serif;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ff3f0fbe;
+}
+
+.headerEmail {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25;
+    padding-top: 20px;
+    display: block;
+    font-family: 'matesc', sans-serif;
+    width: 100%;
+    text-align: center;
+    text-underline-offset: 5px;
+    color: #ff3f0f96;
+    transition: color 0.3s ease-in-out;
+}
+
+.headerEmail:hover {
+    color: var(--accentColor);
+}
+
+.headerTextAccent {
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.dek {
+    padding-top: 20px;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 30px 15px 0;
+}
+
+.linkContainer {
+    position: relative;
+    width: 100%;
+    height: 68px;
+    background-color: #F6EDE1;
+    border-radius: 0.175rem;
+    margin-bottom: 25px;
+}
+
+.link {
+    font-family: var(--font);
+    position: absolute;
+    width: calc(100% - 20px);
+    top: -1px;
+    left: -20px;
+    color: var(--accentColor);
+    border: solid var(--accentColor) 1px;
+    border-radius: 0.375rem;
+    font-size: 2.125rem;
+    text-align: center;
+    display: block;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.link::after {
+    display: block;
+    content: "";
+    background-color: #F6EDE1;
+    border-radius: 0.375rem;
+}
+
+.link:last-child {
+    margin-bottom: 0;
+}
+
+@media (hover: hover) {
+    .link:hover {
+        background-color: var(--accentColor);
+        color: #ffffff;
+    }
+}
+
+.link:active {
+    background-color: var(--accentColor);
+    color: #ffffff;
+}
+
+.disabled {
+    border-color: #ececec;
+    background-color: #ececec;
+    color: #b5b5b5;
+    cursor: not-allowed;
+}
+
+@media (hover: hover) {
+    .disabled:hover {
+        background-color: #ececec;
+        color: #b5b5b5;
+    }
+}
+
+#footer {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    color: #87d3a9;
+    font-weight: bold;
+}
+    
+    
     
     
